@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Button } from "components/Button/Button"
+import Button from "@/components/button/button"
 
 import { LP_GRID_ITEMS } from "lp-items"
 
@@ -34,12 +34,12 @@ export default function Web() {
               Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
               enjoyable development process.
             </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
+            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3" variant="primary">
               Get started
             </Button>
             <Button
               href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
+              variant="secondary"
             >
               Deploy Now
             </Button>

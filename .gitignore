@@ -34,3 +34,7 @@ storybook-static/
 /playwright/.cache/
 
 /.npm-only-allow
+*storybook.log
+
+# uploaded files
+/public/uploads/

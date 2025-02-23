@@ -1,21 +1,35 @@
-@import 'tailwindcss';
+@import url('https://rsms.me/inter/inter.css');
+@import "tailwindcss";
 
-@config '../tailwind.config.js';
-
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+  :root {
+    --border-color: #e5e7eb;
+    --input-color: #e5e7eb;
+    --ring-color: #3b82f6;
+    --background-color: #ffffff;
+    --foreground-color: #000000;
+    --primary-color: #3b82f6;
+    --primary-foreground-color: #ffffff;
+  }
+
+  .dark {
+    --border-color: #1f2937;
+    --input-color: #1f2937;
+    --ring-color: #60a5fa;
+    --background-color: #000000;
+    --foreground-color: #ffffff;
+    --primary-color: #60a5fa;
+    --primary-foreground-color: #000000;
+  }
+
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  @supports (font-variation-settings: normal) {
+    html {
+      font-family: "Inter var", sans-serif;
+    }
   }
 }
+
+/* Add any custom styles below */
